@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-# 0-square.py by Ehoneah Obed
-"""Defines a square """
-
 class Square:
-    """Does nothing""
-    pass
+    """Define a Square."""
+
+    def __init__(self):
+        pass
