@@ -1,13 +1,23 @@
 #!/usr/bin/python3
-class Square:
-    """Define a Square class"""
+"""defines a class Square"""
 
+
+class Square:
+    """Represents a square
+    Attributes:
+        __size (int): size of a side of the square
+    """
     def __init__(self, size=0):
-        """Defines and initializes a square.
-        size (int): the length of one side of the square.
+        """initializes the square
+        Args:
+            size (int): size of a side of the square
+        Returns:
+            None
         """
-        self.__size = size
-        if not isinstance(size, int):
+        if type(size) is not int:
             raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
+        else:
+            if size < 0:
+                raise ValueError("size must be >= 0")
+            else:
+                self.__size = size
